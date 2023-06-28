@@ -1,3 +1,5 @@
+import BlobAnimations from "@/components/BlobAnimations";
+import NavigationBar from "@/components/NavigationBar";
 import Preloader from "@/components/Preloader";
 import { useEffect, useState } from "react";
 
@@ -16,8 +18,13 @@ export default function Home() {
       {isLoading ? (
         <Preloader />
       ) : (
-        <div>
-          <header></header>
+        <div className="h-screen overflow-x-hidden scrollbar-hide">
+          <header>
+            <NavigationBar />
+          </header>
+          <div>
+            <BlobAnimations />
+          </div>
 
           <main></main>
 
