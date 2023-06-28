@@ -1,4 +1,5 @@
 import BlobAnimations from "@/components/BlobAnimations";
+import Hero from "@/components/Hero";
 import NavigationBar from "@/components/NavigationBar";
 import Preloader from "@/components/Preloader";
 import { useEffect, useState } from "react";
@@ -26,7 +27,9 @@ export default function Home() {
             <BlobAnimations />
           </div>
 
-          <main></main>
+          <main>
+            <Hero/>
+          </main>
 
           <footer></footer>
         </div>
