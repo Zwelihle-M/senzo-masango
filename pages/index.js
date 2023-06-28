@@ -1,21 +1,29 @@
-
+import Preloader from "@/components/Preloader";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
-    <div>
-      <header>
+      {isLoading ? (
+        <Preloader />
+      ) : (
+        <div>
+          <header></header>
 
-      </header>
+          <main></main>
 
-      <main>
-hello world
-      </main>
-
-      <footer>
-
-      </footer>
-    </div>
+          <footer></footer>
+        </div>
+      )}
     </>
-  )
+  );
 }
