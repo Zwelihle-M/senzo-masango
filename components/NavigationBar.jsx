@@ -83,7 +83,7 @@ const NavigationBar = () => {
 
   return (
     <nav className="w-full h-20 z-20 fixed duration-300 ease-in ">
-      <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4 backdrop-blur-lg">
+      <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4 backdrop-blur-md">
         <div>
           <Link href="/">
             <Image
@@ -207,6 +207,10 @@ const NavigationBar = () => {
                 </Link>
               ))}
             </ul>
+
+            <div className="text-lg py-4 tracking-wider cursor-pointer text-black capitalize mr-0">
+                Resume
+            </div>
 
              <div className="flex flex-row gap-4">
             <Link href={"https://github.com/Zwelihle-M"}>
