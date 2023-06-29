@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
 
       <div>
-        <h1 className="text-3xl md:text-6xl">
+        <h1 className="text-4xl md:text-6xl">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primaryPurple to-mainFuchsia">
             {text}
           </span>
@@ -46,3 +46,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
