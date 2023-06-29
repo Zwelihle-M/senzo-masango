@@ -55,7 +55,7 @@ const Projects = () => {
         url: "https://www.figma.com/file/9qbYfwhF7yDOyLWdVjQQJq/Next-Spotfiy?type=design&node-id=0%3A1&t=TmXjMtmILUzVH6Bu-1",
       },
     ],
-Native: [
+    Native: [
       {
         id: 1,
         title: "Upcoming projects",
@@ -77,7 +77,7 @@ Native: [
       id="projects"
       className="max-w-screen-xl mx-auto px-8 py-16 pt-24 text-center mt-28"
     >
-      <h1 className="text-3xl md:text-6xl mb-10">
+      <h1 className="text-4xl md:text-6xl mb-10">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primaryPurple to-mainFuchsia">
           Projects
         </span>
@@ -92,7 +92,7 @@ Native: [
       outline-none md:py-2 md:px-6 md:text-base ${
         selected
           ? "border-Gradient border bg-[#35383c] text-white"
-          : "border-b-2 border-[#35383c] text-gray-700 "
+          : "border-b-2 border-[#35383c] text-gray-400 "
       }`
               }
             >
@@ -158,3 +158,4 @@ Native: [
 };
 
 export default Projects;
+
