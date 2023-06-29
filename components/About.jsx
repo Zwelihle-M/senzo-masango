@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import SpinnerLoader from "./SpinnerLoader";
 import XboxEliteModel from "./XboxEliteModel";
 
-
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -27,7 +26,7 @@ const About = () => {
 
       <div className="my-8 px-8">
         <p className="py-4 max-w-2xl mx-auto text-left text-lg">
-          Hello, my name is Zwelihle Masango, a CTU Training Solutions graduate.
+          Hello, my name is Senzo Masango, a CTU Training Solutions graduate.
           who completed the Programming Foundation and Software Development
           courses. In the Programming Foundation course, I acquired the
           fundamentals of coding languages and gained a strong understanding of
@@ -54,7 +53,7 @@ const About = () => {
 
       <div className="mx-auto h-[400px] cursor-grab rounded-lg mb-10">
         {isLoading ? <SpinnerLoader /> : <XboxEliteModel />}
-      </div> 
+      </div>
       <Link href={"/Zwelihle"}>
         <button className="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium  transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-darkPurple hover:scale-110">
           <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-darkPurple via-primaryPurple to-mainFuchsia"></span>

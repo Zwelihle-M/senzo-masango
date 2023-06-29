@@ -68,23 +68,39 @@ const ToolTip = () => {
                   <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-lg font-medium leading-6 text-gray-900"
+                      className="flex gap-2 text-lg font-medium leading-6 text-gray-900"
                     >
                       3D Models
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-6 h-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                          />
+                        </svg>
+                      </span>
                     </Dialog.Title>
                     <div className="mt-2">
                       <p className="text-base text-black">
-                        Hey there, my portfolio has 3D models and they{"'"}re
-                        not just static images but interactive. Take control and
-                        interact with them.You can rotate, zoom in, zoom out,pan
-                        around.Thank you for visiting Enjoy!
+                        Hello there, my portfolio has 3D models that are not
+                        static photos but interactive. Take charge and interact
+                        with them.You can pan around, rotate, and zoom in and
+                        out.Thank you for dropping by!
                       </p>
                     </div>
 
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-full border border-transparent bg-primaryPurple px-4 py-2 text-sm font-medium text-white hover:bg-darkPurple focus:outline-none "
+                        className="inline-flex justify-center rounded-lg border border-transparent bg-primaryPurple px-4 py-2 text-sm font-medium text-white hover:bg-darkPurple focus:outline-none "
                         onClick={closeModal}
                       >
                         Got it, thanks!
@@ -102,3 +118,4 @@ const ToolTip = () => {
 };
 
 export default ToolTip;
+
