@@ -46,7 +46,7 @@ const ExperienceTimeline = () => {
               }
             >
               <div>
-                <h1>{element.position}</h1>
+                <h1 className="text-lg">{element.position}</h1>
                 <span className="text-sm">{element.location}</span>
                 <Link href={element.url}>
                   <button className="mt-2 flex gap-1 text-black text-center mx-auto hover:scale-105 hover:text-blue-500">
@@ -104,3 +104,4 @@ const ExperienceTimeline = () => {
 };
 
 export default ExperienceTimeline;
+

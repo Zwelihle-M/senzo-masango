@@ -46,8 +46,8 @@ const EducationTimeline = () => {
               }
             >
               <div className="">
-                <h1 className="">{element.title}</h1>
-                <span className="text-sm">{element.location}</span>
+                <h1 className="text-lg">{element.title}</h1>
+                <span className="text-sm text-gray-600">{element.location}</span>
                 <Link href={element.url}>
                   <button className="mt-2 flex gap-1 text-black text-center mx-auto hover:scale-105 hover:text-blue-500">
                     Visit Website
@@ -68,7 +68,7 @@ const EducationTimeline = () => {
                   </button>
                 </Link>
                 <p className="text-left">{element.description}</p>
-                <div className="space-y-2 text-left mb-2 font-medium">
+                <div className="space-y-2 text-left mb-2">
                   {element.keypoints.map((point, index) => (
                     <p key={`element-point-${index}`} className=" text-sm">
                       {point}
@@ -78,7 +78,7 @@ const EducationTimeline = () => {
               </div>
 
               <div>
-                <ul className="space-y-2 list-disc text-left ml-4">
+                <ul className="space-y-2 list-disc text-left ml-4 mb-2">
                   {element.languages.map((point, index) => (
                     <li key={`element-point-${index}`} className="pl-1 text-sm">
                       {point}
@@ -95,3 +95,4 @@ const EducationTimeline = () => {
 };
 
 export default EducationTimeline;
+
