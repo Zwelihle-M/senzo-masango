@@ -1,5 +1,4 @@
 import React from "react";
-
 import HtmlLogo from "../public/images/TechStack/html.svg";
 import CssLogo from "../public/images/TechStack/css.svg";
 import JavascriptLogo from "../public/images/TechStack/javascript.svg";
@@ -9,9 +8,7 @@ import NodeLogo from "../public/images/TechStack/node.svg";
 import ReactLogo from "../public/images/TechStack/react.svg";
 import NextjsLogo from "../public/images/TechStack/nextjs.svg";
 import CsharpLogo from "../public/images/TechStack/csharp.svg";
-import MysqlLogo from "../public/images/TechStack/mysql.svg";
 import MssqlLogo from "../public/images/TechStack/mssql.svg";
-import FirebaseLogo from "../public/images/TechStack/firebase.svg";
 import MongodbLogo from "../public/images/TechStack/mongodb.svg";
 import VscodeLogo from "../public/images/TechStack/vscode.svg";
 import GitLogo from "../public/images/TechStack/git.svg";
@@ -42,32 +39,30 @@ const TechStack = () => {
     { id: 6, title: "Node", description: "Nodejs", src: NodeLogo },
     { id: 7, title: "React", description: "Reactjs", src: ReactLogo },
     { id: 8, title: "Nextjs", description: "Nextjs", src: NextjsLogo },
-
-    { id: 10, title: "Csharp", description: "Csharp", src: CsharpLogo },
-    { id: 11, title: "Mssql", description: "SQL", src: MssqlLogo },
-    { id: 12, title: "Mysql", description: "Mysql", src: MysqlLogo },
-    { id: 13, title: "Firebase", description: "Firebase", src: FirebaseLogo },
-    { id: 14, title: "Mongodb", description: "Mongodb", src: MongodbLogo },
-    { id: 15, title: "Vscode", description: "Vscode", src: VscodeLogo },
-    { id: 16, title: "Git", description: "Git", src: GitLogo },
+    { id: 9, title: "Csharp", description: "Csharp", src: CsharpLogo },
+    { id: 10, title: "Mssql", description: "SQL", src: MssqlLogo },
+    { id: 11, title: "Mongodb", description: "Mongodb", src: MongodbLogo },
+    { id: 12, title: "Vscode", description: "Vscode", src: VscodeLogo },
+    { id: 13, title: "Git", description: "Git", src: GitLogo },
   ];
   return (
     <div
-
       id="skills"
       className="max-w-screen-xl mx-auto px-8 py-16 text-center mt-28"
     >
-     <h1 className="text-4xl md:text-6xl">
+      <h1 className="text-4xl md:text-6xl mb-10">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primaryPurple to-mainFuchsia">
           Tech Skills
         </span>
       </h1>
-      <p className="text-sm mb-10">Hover over an icon to see a description </p>
-      {/* Skill stack */}
-      <div
-    
-        className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10  xl:space-y-0 mx-auto items-center justify-center"
-      >
+      <div>
+        <p className="mb-10 text-base">
+          This is my current skill set.Hover over an icon to see a description{" "}
+        </p>
+      </div>
+      {/* Skill icons */}
+
+      <div className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10  xl:space-y-0 mx-auto items-center justify-center">
         <div className="grid grid-cols-4 gap-4 md:gap-5 px-8  ">
           {skills.map(({ id, title, src, description }) => (
             <div
@@ -97,3 +92,4 @@ const TechStack = () => {
 };
 
 export default TechStack;
+
