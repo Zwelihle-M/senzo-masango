@@ -1,73 +1,61 @@
 import React from "react";
-import SEOGlobe from "../public/images/SEOGlobe.gif";
-import AnimatedPen from "../public/images/UIUXPen.gif";
-import WebDevelopment from "../public/images/FullstackDeveloper.gif";
+import SEOGlobe from "../public/images/Services/SEOGlobeService.gif";
+import UIUXDesign from "../public/images/Services/UIUXDesignerService.gif";
+import WebDeveloper from "../public/images/Services/WebDevelopmentService.gif";
 import Image from "next/image";
 
 const Services = () => {
+  const DeveloperServices = [
+    {
+      id: 1,
+      title: "Web Development",
+
+      description:
+        "With expertise in web development, UI/UX design, and SEO, I deliver holistic solutions that combine aesthetics, functionality, and visibility to drive your online success",
+      src: WebDeveloper,
+    },
+    {
+      id: 2,
+      title: "UI/UX Design",
+
+      description:
+        "In addition to web development, I specialize in creating captivating UI/UX designs that elevate user experiences and maximize engagement on your website.",
+      src: UIUXDesign,
+    },
+    {
+      id: 3,
+      title: "SEO",
+      description:
+        "I offer comprehensive web development services with a focus on enhancing your online presence through effective SEO strategies.",
+      src: SEOGlobe,
+    },
+  ];
+
   return (
     <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-center mt-28">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
-        <div className="h-full w-full bg-gray-400 rounded-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 shadow-sm">
-          <div>
-            <Image
-              src={SEOGlobe}
-              alt="animated rocket animation"
-              width={500}
-              height={450}
-              quality={100}
-              className="h-[300px] mb-4 md:mb-0 md:mr-0 flex flex-col items-center justify-center p-1.5"
-            />
-            <div className="flex flex-col items-center justify-center p-5">
-              <h1 className="font-bold">Search Engine Optimization</h1>
-              <p>
-                I create fully scalable and economically viable web
-                applications.
-              </p>
+      <h1 className="text-4xl md:text-6xl mb-10">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primaryPurple to-mainFuchsia">
+          Services
+        </span>
+      </h1>
+
+      <div className="flex justify-center">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          {DeveloperServices.map(({ id, title, tags, src, description }) => (
+            <div
+              key={id}
+              className="h-full w-full backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter bg-opacity-10 border border-electricPurple shadow-sm flex flex-col justify-center items-center text-center"
+            >
+              <Image src={src} alt={description} width={200} height={200} />
+              <div>
+                <p className=" text-2xl font-semibold mb-5 py-2">{title}</p>
+              </div>
+              <div className="flex flex-row">{tags}</div>
+              <div>
+                <p className="px-4 py-2">{description}</p>
+              </div>
             </div>
-          </div>
-        </div>
-        {/* ui */}
-        <div className="h-full w-full bg-gray-400 rounded-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 shadow-sm">
-          <div>
-            <Image
-              src={AnimatedPen}
-              alt="animated rocket animation"
-              width={500}
-              height={450}
-              quality={100}
-              className="h-[300px] mb-4 md:mb-0 md:mr-0 flex flex-col items-center justify-center p-1.5"
-            />
-            <div className="flex flex-col items-center justify-center p-5">
-              <h1 className="font-bold">UI/UX Design</h1>
-              <p>
-                Powerful UI/UX is the key to higher user adoption rates, and
-                easier onboarding. By taking the following elements, I conduct
-                initial research and craft the design.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* dev */}
-        <div className="h-full w-full bg-gray-400 rounded-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 shadow-sm">
-          <div>
-            <Image
-              src={WebDevelopment}
-              alt="animated rocket animation"
-              width={500}
-              height={450}
-              quality={100}
-              className="h-[300px] mb-4 md:mb-0 md:mr-0 flex flex-col items-center justify-center p-1.5"
-            />
-            <div className="flex flex-col items-center justify-center p-5">
-              <h1 className="font-bold">Web Development</h1>
-              <p>
-                Powerful UI/UX is the key to higher user adoption rates, and
-                easier onboarding. By taking the following elements, I conduct
-                initial research and craft the design.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
@@ -75,3 +63,4 @@ const Services = () => {
 };
 
 export default Services;
+
