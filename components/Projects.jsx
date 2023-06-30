@@ -21,12 +21,14 @@ const Projects = () => {
         title: "Takealot clone",
         imgSrc: NextTakealot,
         url: "/NextTakealot",
+        description:"Takealot clone"
       },
       {
         id: 2,
         title: "Spotify clone",
         imgSrc: NextSpotify,
         url: "/NextSpotify",
+        description:"Spotify clone"
       },
     ],
     UIUX: [
@@ -35,24 +37,28 @@ const Projects = () => {
         title: "Car Rental Shop",
         imgSrc: VehicleFind,
         url: "https://www.figma.com/file/sTgEcycBorm5T7uKuMoRJk/VehicleFind?type=design&node-id=0%3A1&t=AZkzOGH2AFW3u9ru-1",
+        description:"Figma Design "
       },
       {
         id: 2,
         title: "Gaza Esport ZA",
         imgSrc: GamingZA,
         url: "https://www.figma.com/file/a5EiZH4OxSu2XldG2r5DC1/GazaEsport?type=design&node-id=0%3A1&t=M0lJkLBWarNCH0S7-1",
+        description:"Figma Design "
       },
       {
         id: 3,
         title: "Capitec bank",
         imgSrc: NextCapitec,
         url: "https://www.figma.com/file/NHMRDuWQreldlzhsPR8erY/Next-Capitec-Bank?type=design&node-id=0%3A1&t=MG31nvlCPVYWc7hx-1",
+        description:"Figma Design "
       },
       {
         id: 4,
         title: "Spotify clone",
         imgSrc: NextSpotify,
         url: "https://www.figma.com/file/9qbYfwhF7yDOyLWdVjQQJq/Next-Spotfiy?type=design&node-id=0%3A1&t=TmXjMtmILUzVH6Bu-1",
+        description:"Figma Design "
       },
     ],
     Native: [
@@ -115,7 +121,7 @@ const Projects = () => {
                     <Image
                       src={post.imgSrc}
                       alt={post.title}
-                      className="duration-200 hover:scale-110 group-hover:opacity-20 rounded-lg"
+                      className="duration-200 hover:scale-110 group-hover:opacity-5 rounded-lg"
                       height={700}
                       width={900}
                       quality={100}
@@ -146,6 +152,12 @@ const Projects = () => {
                         </button>
                       </Link>
                     </div>
+                    {/* description
+                     */}
+                     <div className="hidden group-hover:flex flex-col justify-center items-center absolute top-24 bottom-0 left-0 right-0">
+                      <p className="text-lg font-bold">{post.description}</p>
+
+                     </div>
                   </div>
                 ))}
               </div>

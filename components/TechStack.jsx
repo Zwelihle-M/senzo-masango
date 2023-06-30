@@ -57,7 +57,7 @@ const TechStack = () => {
       </h1>
       <div>
         <p className="mb-10 text-base">
-          This is my current skill set.Hover over an icon to see a description{" "}
+          Hover over an icon to see a description{" "}
         </p>
       </div>
       {/* Skill icons */}

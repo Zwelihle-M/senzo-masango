@@ -38,7 +38,11 @@ const Services = () => {
           Services
         </span>
       </h1>
-
+      <div>
+        <p className="mb-10 text-base">
+          Here is what i offer to you
+        </p>
+      </div>
       <div className="flex justify-center">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {DeveloperServices.map(({ id, title, tags, src, description }) => (

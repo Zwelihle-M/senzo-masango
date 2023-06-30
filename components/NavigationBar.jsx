@@ -208,9 +208,6 @@ const NavigationBar = () => {
               ))}
             </ul>
 
-            <div className="text-lg py-4 tracking-wider cursor-pointer text-black capitalize mr-0">
-                Resume
-            </div>
 
              <div className="flex flex-row gap-4">
             <Link href={"https://github.com/Zwelihle-M"}>

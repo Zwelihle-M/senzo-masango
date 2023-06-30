@@ -20,7 +20,7 @@ const Preloader = () => {
       animate={{ opacity: 0 }}
       transition={{ duration: 3, ease: "easeInOut" }}
     >
-      <motion.h1 className="text-8xl text-transparent bg-clip-text bg-gradient-to-r from-blushPink to-primaryPurple">
+      <motion.h1 className="text-9xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blushPink to-primaryPurple">
         {rounded}
       </motion.h1>
     </motion.div>
