@@ -196,7 +196,7 @@ const NavigationBar = () => {
 
           <div className="mt-18 flex flex-col h-fit gap-20 text-black">
             <ul>
-              {links.map(({ id, link }) => (
+              {navigationLinks.map(({ id, link }) => (
                 <Link key={id} href={`/#${link}`}>
                   <li
                     onClick={() => setNavigation(false)}
