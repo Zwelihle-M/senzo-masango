@@ -8,7 +8,7 @@ const Hero = () => {
     words: [
       "Welcome",
       "Senzo Masango",
-      "Frontend Developer",
+      "Software Developer",
       "UI/UX Web Designer",
     ],
     loop: true,
